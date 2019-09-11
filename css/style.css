@@ -78,6 +78,11 @@ ul, li {
     font-family: Poppins;
     color: #FF9400;
     font-weight: 700; }
+  .header__img {
+    position: absolute;
+    width: 6rem;
+    left: -1rem;
+    top: 62rem; }
   .header__image {
     position: relative; }
     .header__image--top {
@@ -127,6 +132,8 @@ ul, li {
   transition: all .2s;
   font-size: 2.2rem;
   border: none;
+  font-weight: 600;
+  font-family: "Muli", sans-serif;
   cursor: pointer;
   background-image: linear-gradient(to right, #FF9400, #FFDC30); }
 .btn:hover {
@@ -163,5 +170,59 @@ ul, li {
 .btn--animated {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
+
+.header {
+  position: relative; }
+  .header__heading {
+    position: absolute;
+    left: 30rem;
+    top: 2rem;
+    font-size: 2.5rem;
+    font-family: Poppins;
+    color: #FF9400;
+    font-weight: 700; }
+  .header__img {
+    position: absolute;
+    width: 6rem;
+    left: -1rem;
+    top: 62rem; }
+  .header__image {
+    position: relative; }
+    .header__image--top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 15rem; }
+    .header__image--right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%; }
+  .header__middle {
+    display: flex;
+    flex-direction: row;
+    top: 32rem;
+    left: 20rem;
+    position: absolute; }
+    .header__middle--text {
+      width: 50rem;
+      height: 30rem; }
+      .header__middle--text__heading1 {
+        line-height: 5rem;
+        font-size: 3rem;
+        font-weight: 800;
+        font-family: "Muli", sans-serif; }
+      .header__middle--text__heading2 {
+        font-weight: 800;
+        font-size: 3rem;
+        font-family: "Muli", sans-serif; }
+      .header__middle--text__para {
+        margin-top: 2rem;
+        font-size: 2rem; }
+    .header__middle--image {
+      margin-left: 22rem; }
+      .header__middle--image img {
+        margin-top: -15rem;
+        width: 55rem; }
 
 /*# sourceMappingURL=style.css.map */
