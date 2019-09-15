@@ -60,6 +60,54 @@ ul, li {
   100% {
     opacity: 1;
     transform: translateY(0); } }
+.health__container {
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+.health__bg {
+  position: absolute;
+  width: 35rem;
+  left: -2rem;
+  top: 3rem; }
+.health__quote {
+  font-size: 4rem;
+  width: 77%;
+  position: absolute;
+  margin-left: 32rem;
+  margin-top: 7rem; }
+  .health__quote::after {
+    content: "- Swami Vivekanad";
+    font-size: 3rem;
+    position: absolute;
+    font-family: "Muli", sans-serif;
+    color: #777;
+    margin-top: 6rem; }
+.health__middle {
+  position: absolute;
+  margin-top: 30rem;
+  margin-left: 35rem;
+  display: flex; }
+  .health__middle--text {
+    width: 50rem;
+    height: 30rem;
+    margin-top: 10rem; }
+    .health__middle--text__heading1 {
+      line-height: 5rem;
+      font-size: 3rem;
+      font-weight: 800;
+      font-family: "Muli", sans-serif; }
+    .health__middle--text__heading2 {
+      font-weight: 800;
+      font-size: 3rem;
+      font-family: "Muli", sans-serif; }
+    .health__middle--text__para {
+      margin-top: 2rem;
+      font-size: 1.8rem; }
+  .health__middle--image {
+    margin-left: 10rem; }
+    .health__middle--image--right {
+      width: 55rem; }
+
 .btn, .btn:link, .btn:visited {
   margin-top: 3rem;
   text-decoration: none;
@@ -128,7 +176,7 @@ header {
     header .header__image--left {
       width: 6rem;
       left: -1rem;
-      top: 62rem; }
+      top: 58rem; }
   header .header__text {
     position: absolute;
     left: 30rem;
