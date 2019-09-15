@@ -195,10 +195,44 @@ header {
         margin-top: 2rem;
         font-size: 1.8rem; }
     header .header__middle--image {
-      margin-left: 22rem; }
+      margin-left: 15rem; }
       header .header__middle--image--right {
         margin-top: -15rem;
         width: 55rem; }
+
+.work__container {
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+.work__bg {
+  position: absolute;
+  width: 200rem;
+  top: -30rem;
+  left: -2rem; }
+.work__middle {
+  position: absolute;
+  margin-top: 29rem;
+  display: flex; }
+  .work__middle--text {
+    width: 50rem;
+    height: 30rem;
+    margin-left: 15rem; }
+    .work__middle--text__heading1 {
+      line-height: 5rem;
+      font-size: 3rem;
+      font-weight: 800;
+      font-family: "Muli", sans-serif; }
+    .work__middle--text__heading2 {
+      font-weight: 800;
+      font-size: 3rem;
+      font-family: "Muli", sans-serif; }
+    .work__middle--text__para {
+      margin-top: 2rem;
+      font-size: 1.8rem; }
+  .work__middle--image {
+    margin-left: 10rem; }
+    .work__middle--image--right {
+      width: 55rem; }
 
 .btn, .btn:link, .btn:visited {
   margin-top: 3rem;
