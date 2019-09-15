@@ -4,8 +4,7 @@
   padding: 0px; }
 
 body {
-  box-sizing: border-box;
-  position: relative; }
+  box-sizing: border-box; }
 
 html {
   font-size: 62.5%; }
@@ -24,13 +23,6 @@ html {
   user-select: none;
   /* Non-prefixed version, currently
      supported by Chrome and Opera */ }
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  margin: 0; }
 
 ::selection {
   color: #fff;
