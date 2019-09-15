@@ -108,54 +108,42 @@ ul, li {
     .health__middle--image--right {
       width: 55rem; }
 
-.btn, .btn:link, .btn:visited {
-  margin-top: 3rem;
-  text-decoration: none;
-  padding: 1.5rem 4rem;
-  display: inline-block;
-  border-radius: 10rem;
-  position: relative;
-  transition: all .2s;
-  font-size: 2.2rem;
-  border: none;
-  font-weight: 600;
-  font-family: "Muli", sans-serif;
-  cursor: pointer;
-  background-image: linear-gradient(to right, #FF9400, #FFDC30); }
-.btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.2); }
-  .btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.5);
-    opacity: 0; }
-.btn:active, .btn:focus {
-  outline: none;
-  transform: translateY(-0.1rem);
-  box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.2); }
-.btn--white {
-  background-color: #fff;
-  color: #777; }
-  .btn--white::after {
-    background-color: #fff; }
-.btn--green {
-  background-color: #FFDC2C;
-  color: #fff; }
-  .btn--green::after {
-    background-color: #FFDC2C; }
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
+.services__container {
   width: 100%;
-  border-radius: 10rem;
+  height: 100vh;
+  position: relative; }
+.services__bg {
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all .4s; }
-.btn--animated {
-  animation: moveInBottom .5s ease-out .75s;
-  animation-fill-mode: backwards; }
+  width: 30rem;
+  right: 0;
+  top: 17rem; }
+.services__middle {
+  position: absolute;
+  margin-top: 20rem;
+  margin-left: 5rem;
+  display: flex; }
+  .services__middle--image {
+    margin-left: 7rem; }
+    .services__middle--image--right {
+      width: 55rem; }
+  .services__middle--text {
+    width: 30rem;
+    height: 30rem;
+    margin-left: 9rem; }
+    .services__middle--text__heading1 {
+      line-height: 5rem;
+      font-size: 3rem;
+      font-weight: 800;
+      font-family: "Muli", sans-serif; }
+    .services__middle--text__heading2 {
+      font-weight: 800;
+      font-size: 3rem;
+      font-family: "Muli", sans-serif; }
+    .services__middle--text__para {
+      font-family: "Muli", sans-serif;
+      line-height: 3rem;
+      margin-top: 2rem;
+      font-size: 1.8rem; }
 
 header {
   width: 100%;
@@ -211,6 +199,55 @@ header {
       header .header__middle--image--right {
         margin-top: -15rem;
         width: 55rem; }
+
+.btn, .btn:link, .btn:visited {
+  margin-top: 3rem;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  position: relative;
+  transition: all .2s;
+  font-size: 2.2rem;
+  border: none;
+  font-weight: 600;
+  font-family: "Muli", sans-serif;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #FF9400, #FFDC30); }
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.2); }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.5);
+    opacity: 0; }
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.2); }
+.btn--white {
+  background-color: #fff;
+  color: #777; }
+  .btn--white::after {
+    background-color: #fff; }
+.btn--green {
+  background-color: #FFDC2C;
+  color: #fff; }
+  .btn--green::after {
+    background-color: #FFDC2C; }
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s; }
+.btn--animated {
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards; }
 
 .nav {
   top: 2.9rem;
