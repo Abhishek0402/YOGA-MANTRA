@@ -1,0 +1,175 @@
+.form
+{
+    &__container{
+        height: 70rem;
+        width: 100%;
+        margin-top: 30rem;
+      background-image: linear-gradient(to right, #FF9400,#FFDC30);
+        position: relative;
+                display: flex;
+        justify-content: center;
+        
+        &--main{
+            position: absolute;
+            margin-top: 17rem;
+            width: 50%;
+            height: 40rem;
+//            background-color: red;
+               display: flex;
+        justify-content: center;
+        }
+    }
+    &__heading{
+        position: absolute;
+        margin-top: 6rem;
+        font-size: 3rem;
+           font-weight: 800;
+         font-family: "Muli", sans-serif;
+    }
+    
+    &__group{
+     
+        &--name{
+            margin-top: 1rem;
+            margin-bottom: 4.5rem;
+            position: absolute;
+        
+        }
+        &--phone{
+            margin-top: 11rem;
+            margin-bottom: 4.5rem;
+            position: absolute;
+        
+        }
+        &--email{
+            margin-top: 21rem;
+            margin-bottom: 4.5rem;
+            position: absolute;
+        
+        }
+        &--message{
+            margin-top: 31rem;
+            margin-bottom: 4.5rem;
+            position: absolute;
+        
+        }
+        &--submit{
+            margin-top: 41rem;
+            margin-bottom: 4.5rem;
+            position: absolute;
+        
+        }
+         
+      
+        
+    }
+  
+    &__label{
+    
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Muli", sans-serif;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+        display: block;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+
+        &--image{
+            width: 2rem;
+          position: absolute;
+            left: 45rem;
+        }
+      
+    }
+    
+    &__input{
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Muli", sans-serif;
+   border:none;
+   border-bottom:.1rem solid  #3053FF;
+//   border-bottom:.1rem solid  #FFF2B0;
+          width: 50rem;
+   background-color: transparent;
+   padding:1rem 1rem 1rem .5rem;
+//  display:block;
+  
+        &:focus{
+            outline: none;
+            
+        }
+
+
+        
+        &--bar {
+            position:relative; display:block; width:300px;
+            
+            &::before,&::after {
+                  content:'';
+               height:.2rem; 
+              width:0rem;;
+              bottom:1px; 
+              position:absolute;
+              background:#2121db; 
+              transition:0.2s ease all; 
+              -moz-transition:0.2s ease all; 
+              -webkit-transition:0.2s ease all;
+            }
+            &::before{
+                left: 25rem;
+            }
+            &::after{
+                right: 5rem;
+            }
+        }
+        
+        sss
+        &__highlight{
+             position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5; 
+        }
+
+    }
+    &__input:focus~&__label, &__input:valid ~ &__label{
+        top: -20px;
+        font-size: 2rem;
+        color: #2121db;
+    }
+    &__input:focus ~ &__input--bar::before, &__input:focus ~ &__input--bar::after {
+        width: 25rem;
+    }
+    &__input:focus ~ &__input--highlight {
+          -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+    }
+    
+}
+
+
+
+
+
+
+
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}

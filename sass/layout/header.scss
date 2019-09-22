@@ -17,6 +17,10 @@ header{
                 top: 0;
                 left: 0;
                 width: 15rem;
+                  @include respond(w600) {
+               width: 12rem;
+    }
+           
 
             }
             &--right{
@@ -36,18 +40,39 @@ header{
         
         &__text{
                position: absolute;
-                left: 30rem;
+                left: 25rem;
                 top: 2rem;
                 
                 font-size: 2.5rem;
                 font-family: Poppins;
                 color: #FF9400;
                 font-weight: 700;
+            
+                    
+            
+            @include respond(w1100) {
+           left: 20rem;
+    }
+            
+        @include respond(w900) {
+           left: 15rem;
+    }
+            @include respond(w700) {
+            left: 10rem;
+                top: 8rem;
+    }
+               @include respond(w600) {
+            left: 6rem;
+                   font-size: 2rem;
+                top: 8rem;
+    }
+            
+            
         }
          &__middle{
         position: absolute;
         top: 32rem;
-        left: 20rem;
+        left: 10rem;
         display: flex;
         flex-direction: row;
         
@@ -85,7 +110,21 @@ header{
  }
    
 }
-
-  
+//
+//  @include respond(w1800) {
+//            margin-top: 5rem;
+//        }
+//        @include respond(w1300) {
+//            margin-top: 7rem;
+//        }
+//        @include respond(w1200) {
+//            margin-top: 10rem;
+//        }
+//        @include respond(w900) {
+//            margin-top: 5rem;
+//        }
+//        @include respond(w400) {
+//            margin-top: -2rem;
+//        }
 
  
