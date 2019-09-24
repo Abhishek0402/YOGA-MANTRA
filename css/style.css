@@ -224,6 +224,9 @@ header {
       width: 6rem;
       left: -1rem;
       top: 58rem; }
+      @media only screen and (max-width: 37.5em) {
+        header .header__image--left {
+          top: 62rem; } }
   header .header__text {
     position: absolute;
     left: 25rem;

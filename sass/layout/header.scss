@@ -35,6 +35,10 @@ header{
                     width: 6rem;
                     left: -1rem;
                     top: 58rem;
+                @include respond(w600){
+                    
+                    top: 62rem;
+                }
             }
         }
         
