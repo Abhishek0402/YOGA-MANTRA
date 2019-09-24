@@ -80,7 +80,8 @@ ul, li {
       width: 20rem; } }
   @media only screen and (max-width: 25em) {
     .health__bg {
-      top: 15rem; } }
+      top: 20rem;
+      width: 17rem; } }
 .health__quote {
   font-size: 4rem;
   position: absolute;
@@ -134,7 +135,8 @@ ul, li {
   @media only screen and (max-width: 31.25em) {
     .health__quote {
       width: 70%;
-      line-height: 3rem; } }
+      line-height: 3rem;
+      margin-left: 2rem; } }
   @media only screen and (max-width: 25em) {
     .health__quote {
       width: 80%; } }

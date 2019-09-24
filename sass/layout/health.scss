@@ -22,7 +22,8 @@
             width: 20rem;
         }
          @include respond(w400){
-            top: 15rem;
+            top: 20rem;
+             width: 17rem;
         }
     }
     
@@ -94,9 +95,11 @@
         @include respond(w500){
             width: 70%;
          line-height: 3rem;
+             margin-left: 2rem;
         }
         @include respond(w400){
             width: 80%;
+           
         
         }
     }
