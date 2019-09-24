@@ -146,6 +146,11 @@ header{
                    font-size: 2.5rem;
                    line-height: 4rem;
                }
+                @include respond(w600) {
+     
+                   line-height: 3rem;
+               }
+              
           }
           &__heading2{
             font-weight: 800;
@@ -169,7 +174,7 @@ header{
          
             &--right{
                 margin-top: -15rem;
-                width: 50rem;
+                width: 55rem;
           
                 @include respond(w1100) {
                     width: 45rem;

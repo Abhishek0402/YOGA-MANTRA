@@ -4,37 +4,109 @@
         width: 100%;
         height: 100vh;
         position: relative;
-        
+        display: flex;
+      
+        justify-content: center;
     }
     &__bg{
         position: absolute;
         width: 35rem;
         left: -2rem;
-        top: 3rem;
+        top: 12rem;
+        
+        @include respond(w900){
+            width: 30rem;
+            top: 15rem;
+        }
+        @include respond(w600){
+            width: 20rem;
+        }
+         @include respond(w400){
+            top: 15rem;
+        }
     }
+    
     &__quote{
         font-size: 4rem;
-        width: 77%;
+       
        position: absolute;
-        margin-left: 32rem;
-        margin-top: 7rem;
+//        margin-left: 32rem;
+        margin-top: 8rem;
       
+        
          &::after{
               content: "- Swami Vivekanad";
               font-size: 3rem;
               position: absolute;
               font-family: "Muli", sans-serif;
               color: #777;
-              margin-top: 6rem;
-            }  
+              margin-top: 3rem;
+             margin-left:60rem;
+             display: block;
+             @include respond(w900) {
+                 font-size: 2.5rem;
+                 margin-left: 50rem;
+             }
+              @include respond(w800) {
+                 font-size: 1.8rem;
+                
+             }
+             @include respond(w700) {
+                 font-size: 1.7rem;
+                 margin-left: 40rem;
+                
+             }
+             @include respond(w600) {
+                 font-size: 1.5rem;
+                 margin-left: 35rem;
+                
+             }
+              @include respond(w500) {
+                 font-size: 1.3rem;
+               margin-left: 15rem;
+                
+             }
+              @include respond(w400) {
+                 
+               margin-left: 10rem;
+                
+             }
+        } 
+        @include respond(w1100){
+            margin-top: 12rem;
+            
+        }
+         @include respond(w900){
+            font-size: 3.5rem;
+        }
+        @include respond(w800){
+            font-size: 3rem;
+            
+        }
+        @include respond(w700){
+            font-size: 2.5rem;
+            
+        }
+         @include respond(w600){
+            font-size: 2.2rem;
+            
+        }
+        @include respond(w500){
+            width: 70%;
+         line-height: 3rem;
+        }
+        @include respond(w400){
+            width: 80%;
+        
+        }
     }
     
     
     &__middle{
       
         position: absolute;
-        margin-top: 30rem;
-       margin-left: 35rem;
+//        margin-top: 30rem;
+//       margin-left: 35rem;
         display: flex;
        
         
