@@ -13,6 +13,13 @@
       @content;
     }
   }
+      @if $breakpoint==w500 {
+    @media only screen and (max-width: 31.25em) {
+      //500px
+      @content;
+    }
+  }
+
 
   @if $breakpoint==w600 {
     @media only screen and (max-width: 37.5em) {
@@ -61,7 +68,7 @@
   }
 
   @if $breakpoint==w1800 {
-    @media only screen and (min-width: 112.5em) {
+    @media only screen and (max-width: 112.5em) {
       //1800px
       @content;
     }

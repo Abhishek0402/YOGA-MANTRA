@@ -69,47 +69,145 @@ header{
             
             
         }
-         &__middle{
+        
+        
+        
+        
+         &__middle {
         position: absolute;
         top: 32rem;
         left: 10rem;
         display: flex;
         flex-direction: row;
-        
+             justify-content: space-around;
+          width: 90%; 
+             
+             @include respond(w1100) {
+                 width: 85%;
+             }
+             @include respond(w900){
+                 flex-direction: column-reverse;
+                 width: 80%;
+                 top: 10rem;
+                align-items: center;
+             }
+             
+             @include respond(w700) {
+                 top: 12rem;
+             }
+             @include respond(w600) {
+                 width: 65%;  
+             }
+             @include respond(w500) {
+                 width: 50%;
+                 left: 12rem;
+             }
+             @include respond(w400) {
+                 width: 40%;
+                left: 11rem;
+                 align-items: center;
+                 
+             }
+             @include respond(w300) {
+                 width: 25%;
+              
+                 align-items: center;
+                 
+             }
         &--text{ 
         
             width: 50rem;
             height: 30rem;
-        
+            @include respond(w900) {
+            text-align: center;
+                
+                margin-top: 2rem;
+            }
+            @include respond(w600){
+                width: 45rem;
+            }
+             @include respond(w500){
+                width: 35rem;
+            }
+             @include respond(w400){
+                width: 25rem;
+                 
+            }
+            @include respond(w300){
+                width: 20rem;
+                 
+            }
            &__heading1{
             line-height: 5rem;
             font-size: 3rem;
              font-weight: 800;
             font-family: "Muli", sans-serif;
+               @include respond(w900) {
+                   font-size: 2.5rem;
+                   line-height: 4rem;
+               }
           }
           &__heading2{
             font-weight: 800;
             font-size: 3rem;
             font-family: "Muli", sans-serif;
+               @include respond(w900) {
+                   font-size: 2.5rem;
+               }
           }
         &__para{
             margin-top: 2rem;
             font-size: 1.8rem;
+             @include respond(w900) {
+                   font-size: 1.5rem;
+               }
         }
         }     
+            
              
         &--image{
-         margin-left: 15rem; 
+         
             &--right{
                 margin-top: -15rem;
-                width: 55rem;
+                width: 50rem;
+          
+                @include respond(w1100) {
+                    width: 45rem;
+                    margin-top: -10rem;
+                }
+                @include respond(w900) {
+                    width: 40rem;
+                    margin-top: 0;
+                }
+                @include respond(w700) {
+                    width: 35rem;
+                }
+                @include respond(w500) {
+                    width: 30rem;
+                }
+                 @include respond(w400) {
+                    width: 25rem;
+                }
+                @include respond(w300) {
+                    width: 20rem;
+                }
             }
+            
         }
+             
     }
+        
+        
+        
         
  }
    
 }
+
+
+
+
+
 //
 //  @include respond(w1800) {
 //            margin-top: 5rem;

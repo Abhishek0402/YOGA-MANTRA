@@ -16,6 +16,12 @@
          cursor: pointer;
       background-image: linear-gradient(to right, #FF9400,#FFDC30);
     }
+    @include respond(w600) {
+        font-size: 2rem;
+    }
+    @include respond(w500) {
+        font-size: 1.8rem;
+    }
     
      &:hover{
            

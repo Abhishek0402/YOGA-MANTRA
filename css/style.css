@@ -196,27 +196,101 @@ header {
     top: 32rem;
     left: 10rem;
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%; }
+    @media only screen and (max-width: 68.75em) {
+      header .header__middle {
+        width: 85%; } }
+    @media only screen and (max-width: 56.25em) {
+      header .header__middle {
+        flex-direction: column-reverse;
+        width: 80%;
+        top: 10rem;
+        align-items: center; } }
+    @media only screen and (max-width: 43.75em) {
+      header .header__middle {
+        top: 12rem; } }
+    @media only screen and (max-width: 37.5em) {
+      header .header__middle {
+        width: 65%; } }
+    @media only screen and (max-width: 31.25em) {
+      header .header__middle {
+        width: 50%;
+        left: 12rem; } }
+    @media only screen and (max-width: 25em) {
+      header .header__middle {
+        width: 40%;
+        left: 11rem;
+        align-items: center; } }
+    @media only screen and (max-width: 18.75em) {
+      header .header__middle {
+        width: 25%;
+        align-items: center; } }
     header .header__middle--text {
       width: 50rem;
       height: 30rem; }
+      @media only screen and (max-width: 56.25em) {
+        header .header__middle--text {
+          text-align: center;
+          margin-top: 2rem; } }
+      @media only screen and (max-width: 37.5em) {
+        header .header__middle--text {
+          width: 45rem; } }
+      @media only screen and (max-width: 31.25em) {
+        header .header__middle--text {
+          width: 35rem; } }
+      @media only screen and (max-width: 25em) {
+        header .header__middle--text {
+          width: 25rem; } }
+      @media only screen and (max-width: 18.75em) {
+        header .header__middle--text {
+          width: 20rem; } }
       header .header__middle--text__heading1 {
         line-height: 5rem;
         font-size: 3rem;
         font-weight: 800;
         font-family: "Muli", sans-serif; }
+        @media only screen and (max-width: 56.25em) {
+          header .header__middle--text__heading1 {
+            font-size: 2.5rem;
+            line-height: 4rem; } }
       header .header__middle--text__heading2 {
         font-weight: 800;
         font-size: 3rem;
         font-family: "Muli", sans-serif; }
+        @media only screen and (max-width: 56.25em) {
+          header .header__middle--text__heading2 {
+            font-size: 2.5rem; } }
       header .header__middle--text__para {
         margin-top: 2rem;
         font-size: 1.8rem; }
-    header .header__middle--image {
-      margin-left: 15rem; }
-      header .header__middle--image--right {
-        margin-top: -15rem;
-        width: 55rem; }
+        @media only screen and (max-width: 56.25em) {
+          header .header__middle--text__para {
+            font-size: 1.5rem; } }
+    header .header__middle--image--right {
+      margin-top: -15rem;
+      width: 50rem; }
+      @media only screen and (max-width: 68.75em) {
+        header .header__middle--image--right {
+          width: 45rem;
+          margin-top: -10rem; } }
+      @media only screen and (max-width: 56.25em) {
+        header .header__middle--image--right {
+          width: 40rem;
+          margin-top: 0; } }
+      @media only screen and (max-width: 43.75em) {
+        header .header__middle--image--right {
+          width: 35rem; } }
+      @media only screen and (max-width: 31.25em) {
+        header .header__middle--image--right {
+          width: 30rem; } }
+      @media only screen and (max-width: 25em) {
+        header .header__middle--image--right {
+          width: 25rem; } }
+      @media only screen and (max-width: 18.75em) {
+        header .header__middle--image--right {
+          width: 20rem; } }
 
 .work__container {
   width: 100%;
@@ -419,6 +493,12 @@ header {
   font-family: "Muli", sans-serif;
   cursor: pointer;
   background-image: linear-gradient(to right, #FF9400, #FFDC30); }
+@media only screen and (max-width: 37.5em) {
+  .btn {
+    font-size: 2rem; } }
+@media only screen and (max-width: 31.25em) {
+  .btn {
+    font-size: 1.8rem; } }
 .btn:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.2); }
