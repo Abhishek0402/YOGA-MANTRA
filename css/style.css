@@ -234,7 +234,7 @@ ul, li {
   @media only screen and (max-width: 37.5em) {
     .services__container {
       height: 0vh;
-      margin-top: 2rem; } }
+      margin-top: 5rem; } }
 .services__bg {
   position: absolute;
   width: 30rem;
@@ -261,6 +261,9 @@ ul, li {
       flex-direction: column;
       align-items: center;
       margin-top: 45rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .services__middle {
+      margin-top: 40rem; } }
   .services__middle--image {
     margin-left: 5rem; }
     @media only screen and (max-width: 68.75em) {
