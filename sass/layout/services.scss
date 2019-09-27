@@ -5,49 +5,137 @@
         height: 100vh;
         position: relative;
         
+        @include respond(w900){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @include respond(w600){
+            height: 0vh;
+            margin-top: 5rem;
+        }
+        
     }
     &__bg{
            position: absolute;
-        width: 30rem;
+        width: 35rem;
        right: 0;
-        top: 17rem;
+        top: 18rem;
+         @include respond(w1100){
+            width: 32rem;
+        }
+        @include respond(w900){
+            width: 27rem;
+            top: 70rem;
+        }
+        @include respond(w600){
+            width: 24rem;
+            top: 45rem;
+        }
+         @include respond(w400){
+           
+             width: 20rem;
+        }
     }
     
      &__middle{
       
         position: absolute;
         margin-top: 20rem;
-       margin-left: 5rem;
-        display: flex;
        
+        display: flex;
+       justify-content:space-around;
+         
+         @include respond(w900){
+            flex-direction: column;
+           align-items: center;
+             margin-top: 45rem;
+        }
+         
         &--image{
-         margin-left: 7rem; 
+         margin-left: 5rem; 
+            @include respond(w1100){
+                margin-left: 1rem;
+            }
             &--right{
                width: 55rem;
+                
+                   @include respond(w1100){
+                width: 45rem;
+        }
+                @include respond(w600) {
+                    width: 35rem;
+                
+                }
+                 @include respond(w500) {
+                    width: 30rem;
+                }
+                 @include respond(w400) {
+                    width: 25rem;
+                }
+                @include respond(w300) {
+                    width: 20rem;
+                }
             }
         }
         
         &--text{
-            width: 30rem;
+            width: 40rem;
             height: 30rem;
-          
-            margin-left: 9rem;
+         display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 5rem;
+            
+              @include respond(w900) {
+
+                 
+                margin-top: 5rem;
+            }
+            @include respond(w600){
+                width: 35rem;
+                margin-top: 0rem;
+                margin-left: 0rem;
+            }
+             @include respond(w500){
+                width: 30rem;
+            }
+             @include respond(w400){
+                width: 25rem;
+                 
+            }
+            @include respond(w300){
+                width: 20rem;
+                 
+            }
+            
            &__heading1{
             line-height: 5rem;
             font-size: 3rem;
              font-weight: 800;
             font-family: "Muli", sans-serif;
+               
+               @include respond(w600) {
+                  font-size: 2.5rem;
+                   line-height: 3rem;
+               }
           }
           &__heading2{
             font-weight: 800;
             font-size: 3rem;
             font-family: "Muli", sans-serif;
+              
+                @include respond(w600) {
+                   font-size: 2.5rem;
+               }
           }
         &__para{
-             font-family: "Muli", sans-serif;
-            line-height: 3rem;
+             
             margin-top: 2rem;
             font-size: 1.8rem;
+                    @include respond(w600) {
+                   font-size: 1.5rem;
+               }
         }
         }     
           
