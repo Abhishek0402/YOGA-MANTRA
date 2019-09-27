@@ -18,12 +18,10 @@
     }
     &__bg{
            position: absolute;
-        width: 35rem;
+        width: 30rem;
        right: 0;
         top: 18rem;
-         @include respond(w1100){
-            width: 32rem;
-        }
+        
         @include respond(w900){
             width: 27rem;
             top: 70rem;

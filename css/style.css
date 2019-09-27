@@ -237,12 +237,9 @@ ul, li {
       margin-top: 5rem; } }
 .services__bg {
   position: absolute;
-  width: 35rem;
+  width: 30rem;
   right: 0;
   top: 18rem; }
-  @media only screen and (max-width: 68.75em) {
-    .services__bg {
-      width: 32rem; } }
   @media only screen and (max-width: 56.25em) {
     .services__bg {
       width: 27rem;
