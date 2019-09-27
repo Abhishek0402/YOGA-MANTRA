@@ -12,7 +12,7 @@
         }
         @include respond(w600){
             height: 0vh;
-            margin-top: 5rem;
+            margin-top: 2rem;
         }
         
     }
@@ -23,16 +23,16 @@
         top: 18rem;
         
         @include respond(w900){
-            width: 27rem;
+            width: 25rem;
             top: 70rem;
         }
         @include respond(w600){
-            width: 24rem;
+            width: 20rem;
             top: 45rem;
         }
          @include respond(w400){
            
-             width: 20rem;
+             width: 15rem;
         }
     }
     
@@ -49,6 +49,8 @@
            align-items: center;
              margin-top: 45rem;
         }
+         
+         
          
         &--image{
          margin-left: 5rem; 
@@ -86,13 +88,11 @@
             margin-left: 5rem;
             
               @include respond(w900) {
-
-                 
                 margin-top: 5rem;
             }
             @include respond(w600){
                 width: 35rem;
-                margin-top: 0rem;
+                margin-top: 2rem;
                 margin-left: 0rem;
             }
              @include respond(w500){

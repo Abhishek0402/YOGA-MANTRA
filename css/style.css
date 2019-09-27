@@ -234,7 +234,7 @@ ul, li {
   @media only screen and (max-width: 37.5em) {
     .services__container {
       height: 0vh;
-      margin-top: 5rem; } }
+      margin-top: 2rem; } }
 .services__bg {
   position: absolute;
   width: 30rem;
@@ -242,15 +242,15 @@ ul, li {
   top: 18rem; }
   @media only screen and (max-width: 56.25em) {
     .services__bg {
-      width: 27rem;
+      width: 25rem;
       top: 70rem; } }
   @media only screen and (max-width: 37.5em) {
     .services__bg {
-      width: 24rem;
+      width: 20rem;
       top: 45rem; } }
   @media only screen and (max-width: 25em) {
     .services__bg {
-      width: 20rem; } }
+      width: 15rem; } }
 .services__middle {
   position: absolute;
   margin-top: 20rem;
@@ -296,7 +296,7 @@ ul, li {
     @media only screen and (max-width: 37.5em) {
       .services__middle--text {
         width: 35rem;
-        margin-top: 0rem;
+        margin-top: 2rem;
         margin-left: 0rem; } }
     @media only screen and (max-width: 31.25em) {
       .services__middle--text {
