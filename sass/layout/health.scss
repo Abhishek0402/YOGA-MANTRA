@@ -14,6 +14,9 @@
         left: -2rem;
         top: 12rem;
         
+        @include respond(w1100){
+            width: 32rem;
+        }
         @include respond(w900){
             width: 30rem;
             top: 15rem;
@@ -32,7 +35,7 @@
        
        position: absolute;
 //        margin-left: 32rem;
-        margin-top: 8rem;
+        margin-top: 14rem;
       
         
          &::after{
@@ -79,6 +82,7 @@
         }
          @include respond(w900){
             font-size: 3.5rem;
+             margin-top: 18rem;
         }
         @include respond(w800){
             font-size: 3rem;
@@ -106,43 +110,99 @@
     }
     
     
-    &__middle{
+    &__middle {
       
         position: absolute;
-//        margin-top: 30rem;
-//       margin-left: 35rem;
+        margin-top: 33rem;
+        margin-left: 7rem;
         display: flex;
-       
-        
-        
+     justify-content:space-around;
+ 
+        @include respond(w1100){
+            margin-left: 0rem;
+        }
+        @include respond(w900){
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        @include respond(w600){
+            margin-top: 25rem;
+        }
         &--text{
            
-            width: 50rem;
+            width: 40rem;
             height: 30rem;
              margin-top: 10rem;
+          @include respond(w900) {
+
+                 
+                margin-top: 5rem;
+            }
+            @include respond(w600){
+                width: 35rem;
+            }
+             @include respond(w500){
+                width: 30rem;
+            }
+             @include respond(w400){
+                width: 25rem;
+                 
+            }
+            @include respond(w300){
+                width: 20rem;
+                 
+            }
+              
            &__heading1{
             line-height: 5rem;
             font-size: 3rem;
              font-weight: 800;
             font-family: "Muli", sans-serif;
+            @include respond(w600) {
+                  font-size: 2.5rem;
+                   line-height: 3rem;
+               }
           }
           &__heading2{
             font-weight: 800;
             font-size: 3rem;
             font-family: "Muli", sans-serif;
+         @include respond(w600) {
+                   font-size: 2.5rem;
+               }
           }
         &__para{
             margin-top: 2rem;
             font-size: 1.8rem;
+                         @include respond(w600) {
+                   font-size: 1.5rem;
+               }
         }
         }     
           
        
          &--image{
-         margin-left: 10rem; 
+         margin-left: 5rem; 
             &--right{
                
-                width: 55rem;
+                width: 50rem;
+                @include respond(w1100){
+                width: 45rem;
+        }
+                @include respond(w600) {
+                    width: 35rem;
+                
+                }
+                 @include respond(w500) {
+                    width: 30rem;
+                }
+                 @include respond(w400) {
+                    width: 25rem;
+                }
+                @include respond(w300) {
+                    width: 20rem;
+                }
+           
             }
         }
         

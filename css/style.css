@@ -71,6 +71,9 @@ ul, li {
   width: 35rem;
   left: -2rem;
   top: 12rem; }
+  @media only screen and (max-width: 68.75em) {
+    .health__bg {
+      width: 32rem; } }
   @media only screen and (max-width: 56.25em) {
     .health__bg {
       width: 30rem;
@@ -85,7 +88,7 @@ ul, li {
 .health__quote {
   font-size: 4rem;
   position: absolute;
-  margin-top: 8rem; }
+  margin-top: 14rem; }
   .health__quote::after {
     content: "- Swami Vivekanad";
     font-size: 3rem;
@@ -122,7 +125,8 @@ ul, li {
       margin-top: 12rem; } }
   @media only screen and (max-width: 56.25em) {
     .health__quote {
-      font-size: 3.5rem; } }
+      font-size: 3.5rem;
+      margin-top: 18rem; } }
   @media only screen and (max-width: 50em) {
     .health__quote {
       font-size: 3rem; } }
@@ -143,27 +147,80 @@ ul, li {
       width: 80%; } }
 .health__middle {
   position: absolute;
-  display: flex; }
+  margin-top: 33rem;
+  margin-left: 7rem;
+  display: flex;
+  justify-content: space-around; }
+  @media only screen and (max-width: 68.75em) {
+    .health__middle {
+      margin-left: 0rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .health__middle {
+      flex-direction: column-reverse;
+      align-items: center; } }
+  @media only screen and (max-width: 37.5em) {
+    .health__middle {
+      margin-top: 25rem; } }
   .health__middle--text {
-    width: 50rem;
+    width: 40rem;
     height: 30rem;
     margin-top: 10rem; }
+    @media only screen and (max-width: 56.25em) {
+      .health__middle--text {
+        margin-top: 5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .health__middle--text {
+        width: 35rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .health__middle--text {
+        width: 30rem; } }
+    @media only screen and (max-width: 25em) {
+      .health__middle--text {
+        width: 25rem; } }
+    @media only screen and (max-width: 18.75em) {
+      .health__middle--text {
+        width: 20rem; } }
     .health__middle--text__heading1 {
       line-height: 5rem;
       font-size: 3rem;
       font-weight: 800;
       font-family: "Muli", sans-serif; }
+      @media only screen and (max-width: 37.5em) {
+        .health__middle--text__heading1 {
+          font-size: 2.5rem;
+          line-height: 3rem; } }
     .health__middle--text__heading2 {
       font-weight: 800;
       font-size: 3rem;
       font-family: "Muli", sans-serif; }
+      @media only screen and (max-width: 37.5em) {
+        .health__middle--text__heading2 {
+          font-size: 2.5rem; } }
     .health__middle--text__para {
       margin-top: 2rem;
       font-size: 1.8rem; }
+      @media only screen and (max-width: 37.5em) {
+        .health__middle--text__para {
+          font-size: 1.5rem; } }
   .health__middle--image {
-    margin-left: 10rem; }
+    margin-left: 5rem; }
     .health__middle--image--right {
-      width: 55rem; }
+      width: 50rem; }
+      @media only screen and (max-width: 68.75em) {
+        .health__middle--image--right {
+          width: 45rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .health__middle--image--right {
+          width: 35rem; } }
+      @media only screen and (max-width: 31.25em) {
+        .health__middle--image--right {
+          width: 30rem; } }
+      @media only screen and (max-width: 25em) {
+        .health__middle--image--right {
+          width: 25rem; } }
+      @media only screen and (max-width: 18.75em) {
+        .health__middle--image--right {
+          width: 20rem; } }
 
 .services__container {
   width: 100%;
@@ -288,18 +345,17 @@ header {
         width: 25%;
         align-items: center; } }
     header .header__middle--text {
-      width: 50rem;
+      width: 40rem;
       height: 30rem; }
       @media only screen and (max-width: 56.25em) {
         header .header__middle--text {
-          text-align: center;
-          margin-top: 2rem; } }
+          margin-top: 5rem; } }
       @media only screen and (max-width: 37.5em) {
         header .header__middle--text {
-          width: 45rem; } }
+          width: 35rem; } }
       @media only screen and (max-width: 31.25em) {
         header .header__middle--text {
-          width: 35rem; } }
+          width: 30rem; } }
       @media only screen and (max-width: 25em) {
         header .header__middle--text {
           width: 25rem; } }
@@ -311,24 +367,21 @@ header {
         font-size: 3rem;
         font-weight: 800;
         font-family: "Muli", sans-serif; }
-        @media only screen and (max-width: 56.25em) {
-          header .header__middle--text__heading1 {
-            font-size: 2.5rem;
-            line-height: 4rem; } }
         @media only screen and (max-width: 37.5em) {
           header .header__middle--text__heading1 {
+            font-size: 2.5rem;
             line-height: 3rem; } }
       header .header__middle--text__heading2 {
         font-weight: 800;
         font-size: 3rem;
         font-family: "Muli", sans-serif; }
-        @media only screen and (max-width: 56.25em) {
+        @media only screen and (max-width: 37.5em) {
           header .header__middle--text__heading2 {
             font-size: 2.5rem; } }
       header .header__middle--text__para {
         margin-top: 2rem;
         font-size: 1.8rem; }
-        @media only screen and (max-width: 56.25em) {
+        @media only screen and (max-width: 37.5em) {
           header .header__middle--text__para {
             font-size: 1.5rem; } }
     header .header__middle--image--right {
@@ -340,9 +393,8 @@ header {
           margin-top: -10rem; } }
       @media only screen and (max-width: 56.25em) {
         header .header__middle--image--right {
-          width: 40rem;
           margin-top: 0; } }
-      @media only screen and (max-width: 43.75em) {
+      @media only screen and (max-width: 37.5em) {
         header .header__middle--image--right {
           width: 35rem; } }
       @media only screen and (max-width: 31.25em) {

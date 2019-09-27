@@ -8,12 +8,12 @@ Error: Undefined mixin 'respond'.
 14:         left: -2rem;
 15:         top: 12rem;
 16:         
-17:         @include respond(w900){
-18:             width: 30rem;
-19:             top: 15rem;
-20:         }
-21:         @include respond(w600){
-22:             width: 20rem;
+17:         @include respond(w1100){
+18:             width: 32rem;
+19:         }
+20:         @include respond(w900){
+21:             width: 30rem;
+22:             top: 15rem;
 
 Backtrace:
 G:\github\yoga\YOGA-MANTRA\sass\layout\health.scss:17:in `respond'
@@ -77,4 +77,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'respond'.\A         on line 17 of G:\github\yoga\YOGA-MANTRA\sass\layout\health.scss, in `respond'\A         from line 17 of G:\github\yoga\YOGA-MANTRA\sass\layout\health.scss\A \A 12:         position: absolute;\A 13:         width: 35rem;\A 14:         left: -2rem;\A 15:         top: 12rem;\A 16:         \A 17:         @include respond(w900){\A 18:             width: 30rem;\A 19:             top: 15rem;\A 20:         }\A 21:         @include respond(w600){\A 22:             width: 20rem;"; }
+  content: "Error: Undefined mixin 'respond'.\A         on line 17 of G:\github\yoga\YOGA-MANTRA\sass\layout\health.scss, in `respond'\A         from line 17 of G:\github\yoga\YOGA-MANTRA\sass\layout\health.scss\A \A 12:         position: absolute;\A 13:         width: 35rem;\A 14:         left: -2rem;\A 15:         top: 12rem;\A 16:         \A 17:         @include respond(w1100){\A 18:             width: 32rem;\A 19:         }\A 20:         @include respond(w900){\A 21:             width: 30rem;\A 22:             top: 15rem;"; }

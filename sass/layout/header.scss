@@ -120,18 +120,18 @@ header{
              }
         &--text{ 
         
-            width: 50rem;
+            width: 40rem;
             height: 30rem;
             @include respond(w900) {
-            text-align: center;
-                
-                margin-top: 2rem;
+//            text-align: center;
+                 
+                margin-top: 5rem;
             }
             @include respond(w600){
-                width: 45rem;
+                width: 35rem;
             }
              @include respond(w500){
-                width: 35rem;
+                width: 30rem;
             }
              @include respond(w400){
                 width: 25rem;
@@ -146,12 +146,12 @@ header{
             font-size: 3rem;
              font-weight: 800;
             font-family: "Muli", sans-serif;
-               @include respond(w900) {
-                   font-size: 2.5rem;
-                   line-height: 4rem;
-               }
+//               @include respond(w900) {
+//                   font-size: 2.5rem;
+//                   line-height: 4rem;
+//               }
                 @include respond(w600) {
-     
+                  font-size: 2.5rem;
                    line-height: 3rem;
                }
               
@@ -160,14 +160,14 @@ header{
             font-weight: 800;
             font-size: 3rem;
             font-family: "Muli", sans-serif;
-               @include respond(w900) {
+               @include respond(w600) {
                    font-size: 2.5rem;
                }
           }
         &__para{
             margin-top: 2rem;
             font-size: 1.8rem;
-             @include respond(w900) {
+             @include respond(w600) {
                    font-size: 1.5rem;
                }
         }
@@ -185,10 +185,10 @@ header{
                     margin-top: -10rem;
                 }
                 @include respond(w900) {
-                    width: 40rem;
+//                    width: 40rem;
                     margin-top: 0;
                 }
-                @include respond(w700) {
+                @include respond(w600) {
                     width: 35rem;
                 }
                 @include respond(w500) {
