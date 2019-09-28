@@ -39,6 +39,9 @@
          @include respond(w400){
              width: 30rem;
          }
+         @include respond(w300){
+             width: 25rem;
+         }
     }
     
     
