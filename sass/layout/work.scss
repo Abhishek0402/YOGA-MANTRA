@@ -5,13 +5,40 @@
           width: 100%;
         height: 100vh;
         position: relative;
+         @include respond(w900){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @include respond(w600){
+            top: 27rem;
+        }
      
     }
      &__bg{
            position: absolute;
-       width:138rem;
-        top: -30rem;
-         left: -2rem;
+           width: 55rem;
+           left: 0;
+
+         @include respond(w1800){
+           margin-top: -20rem;
+         }
+         @include respond(w1200){
+             margin-top: -10rem;
+         }
+         @include respond(w1100){
+             width: 45rem;
+         }
+          @include respond(w900){
+             width: 40rem;
+              margin-top: 30rem;
+         }
+         @include respond(w500){
+             width: 35rem;
+         }
+         @include respond(w400){
+             width: 30rem;
+         }
     }
     
     
@@ -19,39 +46,111 @@
       
         position: absolute;
         margin-top: 29rem;
-      display: flex;
-       
-        
+        display: flex;
+       justify-content: space-around;
+          @include respond(w1100){
+              margin-top: 17rem;
+          }
+           @include respond(w900){
+            flex-direction: column;
+           align-items: center;
+             margin-top: 65rem;
+        }
+         @include respond(w600){
+             margin-top: 65rem;
+         }
+          @include respond(w400){
+              margin-top: 60rem;
+          }
         
         &--text{
            
-            width: 50rem;
+            width: 40rem;
             height: 30rem;
-             margin-left: 15rem;
+             margin-left: 5rem;
+    
+            @include respond(w1000){
+                margin-left: 1rem;
+            }
+            
+              @include respond(w900) {
+                margin-top: 5rem;
+            }
+            @include respond(w600){
+                width: 35rem;
+                margin-top: 2rem;
+                margin-left: 0rem;
+            }
+             @include respond(w500){
+                width: 30rem;
+            }
+             @include respond(w400){
+                width: 25rem;
+                 
+            }
+            @include respond(w300){
+                width: 20rem;
+                 
+            }
            &__heading1{
             line-height: 5rem;
             font-size: 3rem;
              font-weight: 800;
             font-family: "Muli", sans-serif;
+               @include respond(w600) {
+                  font-size: 2.5rem;
+                   line-height: 3rem;
+               }
           }
           &__heading2{
             font-weight: 800;
             font-size: 3rem;
             font-family: "Muli", sans-serif;
+              
+               @include respond(w600) {
+                   font-size: 2.5rem;
+               }
           }
         &__para{
             margin-top: 2rem;
             font-size: 1.8rem;
+            
+              @include respond(w600) {
+                   font-size: 1.5rem;
+               }
         }
         }     
           
        
          &--image{
-         margin-left: 10rem; 
+         margin-left: 5rem; 
            
+             @include respond(w900){
+                 margin-left: -5rem;
+             }
+             @include respond(w500){
+                 margin-left: 0rem;
+             }
             &--right{
                
-                width: 55rem;
+                width: 50rem;
+                
+                   @include respond(w1100){
+                width: 45rem;
+        }
+                @include respond(w600) {
+                    width: 35rem;
+                
+                }
+                 @include respond(w500) {
+                    width: 30rem;
+                }
+                 @include respond(w400) {
+                    width: 25rem;
+                }
+                @include respond(w300) {
+                    width: 20rem;
+                }
             }
         }
         
