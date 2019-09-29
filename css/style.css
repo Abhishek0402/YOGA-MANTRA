@@ -90,7 +90,7 @@ ul, li {
   position: absolute;
   margin-top: 14rem; }
   .health__quote::after {
-    content: "- Swami Vivekanad";
+    content: "- Swami Vivekanand";
     font-size: 3rem;
     position: absolute;
     font-family: "Muli", sans-serif;
@@ -642,15 +642,24 @@ header {
 .form__container {
   height: 70rem;
   width: 100%;
-  margin-top: 15rem;
+  top: 20rem;
   background-image: linear-gradient(to right, #FF9400, #FFDC30);
   position: relative;
   display: flex;
   justify-content: center; }
+  @media only screen and (max-width: 68.75em) {
+    .form__container {
+      top: 5rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .form__container {
+      top: 40rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .form__container {
+      top: 92rem; } }
   .form__container--main {
     position: absolute;
     margin-top: 17rem;
-    width: 50%;
+    width: 100%;
     height: 40rem;
     display: flex;
     justify-content: center; }
@@ -659,7 +668,15 @@ header {
   margin-top: 6rem;
   font-size: 3rem;
   font-weight: 800;
-  font-family: "Muli", sans-serif; }
+  font-family: "Muli", sans-serif;
+  color: #fff;
+  letter-spacing: 1rem; }
+  @media only screen and (max-width: 37.5em) {
+    .form__heading {
+      font-size: 2.5rem; } }
+  @media only screen and (max-width: 25em) {
+    .form__heading {
+      letter-spacing: .5rem; } }
 .form__group--name {
   margin-top: 1rem;
   margin-bottom: 4.5rem;
@@ -696,6 +713,15 @@ header {
     width: 2rem;
     position: absolute;
     left: 45rem; }
+    @media only screen and (max-width: 37.5em) {
+      .form__label--image {
+        left: 36rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .form__label--image {
+        left: 32rem; } }
+    @media only screen and (max-width: 25em) {
+      .form__label--image {
+        left: 27rem; } }
 .form__input {
   font-size: 2rem;
   font-weight: 600;
@@ -705,6 +731,15 @@ header {
   width: 50rem;
   background-color: transparent;
   padding: 1rem 1rem 1rem .5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .form__input {
+      width: 40rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .form__input {
+      width: 35rem; } }
+  @media only screen and (max-width: 25em) {
+    .form__input {
+      width: 30rem; } }
   .form__input:focus {
     outline: none; }
   .form__input--bar {
@@ -723,9 +758,26 @@ header {
       -webkit-transition: 0.2s ease all; }
     .form__input--bar::before {
       left: 25rem; }
+      @media only screen and (max-width: 37.5em) {
+        .form__input--bar::before {
+          left: 20rem; } }
+      @media only screen and (max-width: 31.25em) {
+        .form__input--bar::before {
+          left: 17.5rem; } }
+      @media only screen and (max-width: 25em) {
+        .form__input--bar::before {
+          left: 15rem; } }
     .form__input--bar::after {
       right: 5rem; }
-  sss
+      @media only screen and (max-width: 37.5em) {
+        .form__input--bar::after {
+          right: 10rem; } }
+      @media only screen and (max-width: 31.25em) {
+        .form__input--bar::after {
+          right: 12.5rem; } }
+      @media only screen and (max-width: 25em) {
+        .form__input--bar::after {
+          right: 15rem; } }
   .form__input__highlight {
     position: absolute;
     height: 60%;
@@ -740,6 +792,15 @@ header {
   color: #2121db; }
 .form__input:focus ~ .form__input--bar::before, .form__input:focus ~ .form__input--bar::after {
   width: 25rem; }
+  @media only screen and (max-width: 37.5em) {
+    .form__input:focus ~ .form__input--bar::before, .form__input:focus ~ .form__input--bar::after {
+      width: 20rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .form__input:focus ~ .form__input--bar::before, .form__input:focus ~ .form__input--bar::after {
+      width: 17.5rem; } }
+  @media only screen and (max-width: 25em) {
+    .form__input:focus ~ .form__input--bar::before, .form__input:focus ~ .form__input--bar::after {
+      width: 15rem; } }
 .form__input:focus ~ .form__input--highlight {
   -webkit-animation: inputHighlighter 0.3s ease;
   -moz-animation: inputHighlighter 0.3s ease;

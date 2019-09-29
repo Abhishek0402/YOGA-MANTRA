@@ -1,126 +1,80 @@
-.form__container {
-  height: 70rem;
-  width: 100%;
-  margin-top: 15rem;
-  background-image: linear-gradient(to right, #FF9400, #FFDC30);
-  position: relative;
-  display: flex;
-  justify-content: center; }
-  .form__container--main {
-    position: absolute;
-    margin-top: 17rem;
-    width: 50%;
-    height: 40rem;
-    display: flex;
-    justify-content: center; }
-.form__heading {
-  position: absolute;
-  margin-top: 6rem;
-  font-size: 3rem;
-  font-weight: 800;
-  font-family: "Muli", sans-serif; }
-.form__group--name {
-  margin-top: 1rem;
-  margin-bottom: 4.5rem;
-  position: absolute; }
-.form__group--phone {
-  margin-top: 11rem;
-  margin-bottom: 4.5rem;
-  position: absolute; }
-.form__group--email {
-  margin-top: 21rem;
-  margin-bottom: 4.5rem;
-  position: absolute; }
-.form__group--message {
-  margin-top: 31rem;
-  margin-bottom: 4.5rem;
-  position: absolute; }
-.form__group--submit {
-  margin-top: 41rem;
-  margin-bottom: 4.5rem;
-  position: absolute; }
-.form__label {
-  font-size: 2rem;
-  font-weight: 600;
-  font-family: "Muli", sans-serif;
-  position: absolute;
-  pointer-events: none;
-  left: 5px;
-  top: 10px;
-  display: block;
-  transition: 0.2s ease all;
-  -moz-transition: 0.2s ease all;
-  -webkit-transition: 0.2s ease all; }
-  .form__label--image {
-    width: 2rem;
-    position: absolute;
-    left: 45rem; }
-.form__input {
-  font-size: 2rem;
-  font-weight: 600;
-  font-family: "Muli", sans-serif;
-  border: none;
-  border-bottom: .1rem solid  #3053FF;
-  width: 50rem;
-  background-color: transparent;
-  padding: 1rem 1rem 1rem .5rem; }
-  .form__input:focus {
-    outline: none; }
-  .form__input--bar {
-    position: relative;
-    display: block;
-    width: 300px; }
-    .form__input--bar::before, .form__input--bar::after {
-      content: '';
-      height: .2rem;
-      width: 0rem;
-      bottom: 1px;
-      position: absolute;
-      background: #2121db;
-      transition: 0.2s ease all;
-      -moz-transition: 0.2s ease all;
-      -webkit-transition: 0.2s ease all; }
-    .form__input--bar::before {
-      left: 25rem; }
-    .form__input--bar::after {
-      right: 5rem; }
-  sss
-  .form__input__highlight {
-    position: absolute;
-    height: 60%;
-    width: 100px;
-    top: 25%;
-    left: 0;
-    pointer-events: none;
-    opacity: 0.5; }
-.form__input:focus ~ .form__label, .form__input:valid ~ .form__label {
-  top: -20px;
-  font-size: 2rem;
-  color: #2121db; }
-.form__input:focus ~ .form__input--bar::before, .form__input:focus ~ .form__input--bar::after {
-  width: 25rem; }
-.form__input:focus ~ .form__input--highlight {
-  -webkit-animation: inputHighlighter 0.3s ease;
-  -moz-animation: inputHighlighter 0.3s ease;
-  animation: inputHighlighter 0.3s ease; }
+/*
+Error: Undefined mixin 'respond'.
+        on line 12 of G:\github\yoga\YOGA-MANTRA\sass\layout\form.scss, in `respond'
+        from line 12 of G:\github\yoga\YOGA-MANTRA\sass\layout\form.scss
 
-@-webkit-keyframes inputHighlighter {
-  from {
-    background: #5264AE; }
-  to {
-    width: 0;
-    background: transparent; } }
-@-moz-keyframes inputHighlighter {
-  from {
-    background: #5264AE; }
-  to {
-    width: 0;
-    background: transparent; } }
-@keyframes inputHighlighter {
-  from {
-    background: #5264AE; }
-  to {
-    width: 0;
-    background: transparent; } }
+7:       background-image: linear-gradient(to right, #FF9400,#FFDC30);
+8:         position: relative;
+9:                 display: flex;
+10:         justify-content: center;
+11:         
+12:         @include respond(w1100){
+13:             top: 5rem;
+14:         }
+15:         @include respond(w900){
+16:             top: 40rem;
+17:         }
 
-/*# sourceMappingURL=form.css.map */
+Backtrace:
+G:\github\yoga\YOGA-MANTRA\sass\layout\form.scss:12:in `respond'
+G:\github\yoga\YOGA-MANTRA\sass\layout\form.scss:12
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'respond'.\A         on line 12 of G:\github\yoga\YOGA-MANTRA\sass\layout\form.scss, in `respond'\A         from line 12 of G:\github\yoga\YOGA-MANTRA\sass\layout\form.scss\A \A 7:       background-image: linear-gradient(to right, #FF9400,#FFDC30);\A 8:         position: relative;\A 9:                 display: flex;\A 10:         justify-content: center;\A 11:         \A 12:         @include respond(w1100){\A 13:             top: 5rem;\A 14:         }\A 15:         @include respond(w900){\A 16:             top: 40rem;\A 17:         }"; }
