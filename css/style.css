@@ -703,7 +703,7 @@ header {
         .contact__middle--text__address {
           font-size: 1.8rem; } }
       .contact__middle--text__address::before {
-        content: '\2610';
+        content: '\002610';
         font-size: 5rem;
         margin-right: 2rem;
         background: -webkit-linear-gradient(#FF9400, #FFDC30);
