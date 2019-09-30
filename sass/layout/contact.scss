@@ -106,14 +106,14 @@ background-image: linear-gradient(to right, #FF9400,#FFDC30);
                     font-size: 1.8rem;
                 }
                 &::before{
-                    content: '\002610';
-                    font-size: 5rem;
+                    content: '\0027A4';
+                    font-size: 4rem;
                     margin-right: 2rem;
                     background: -webkit-linear-gradient(#FF9400,#FFDC30);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     @include respond(w500){
-                    font-size: 4rem;
+                    font-size: 3rem;
                 }
                 }
               

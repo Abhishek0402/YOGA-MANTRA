@@ -703,15 +703,15 @@ header {
         .contact__middle--text__address {
           font-size: 1.8rem; } }
       .contact__middle--text__address::before {
-        content: '\002610';
-        font-size: 5rem;
+        content: '\0027A4';
+        font-size: 4rem;
         margin-right: 2rem;
         background: -webkit-linear-gradient(#FF9400, #FFDC30);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; }
         @media only screen and (max-width: 31.25em) {
           .contact__middle--text__address::before {
-            font-size: 4rem; } }
+            font-size: 3rem; } }
 
 iframe {
   height: 40rem;
