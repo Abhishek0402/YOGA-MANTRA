@@ -198,7 +198,10 @@ ul, li {
           font-size: 2.5rem; } }
     .health__middle--text__para {
       margin-top: 2rem;
-      font-size: 1.8rem; }
+      font-size: 1.8rem;
+      letter-spacing: .2rem;
+      line-height: 2.2rem;
+      font-family: sans-serif; }
       @media only screen and (max-width: 37.5em) {
         .health__middle--text__para {
           font-size: 1.5rem; } }
@@ -328,7 +331,10 @@ ul, li {
           font-size: 2.5rem; } }
     .services__middle--text__para {
       margin-top: 2rem;
-      font-size: 1.8rem; }
+      font-size: 1.8rem;
+      letter-spacing: .2rem;
+      line-height: 2.2rem;
+      font-family: sans-serif; }
       @media only screen and (max-width: 37.5em) {
         .services__middle--text__para {
           font-size: 1.5rem; } }
@@ -454,7 +460,10 @@ header {
             font-size: 2.5rem; } }
       header .header__middle--text__para {
         margin-top: 2rem;
-        font-size: 1.8rem; }
+        font-size: 1.8rem;
+        letter-spacing: .2rem;
+        line-height: 2.2rem;
+        font-family: sans-serif; }
         @media only screen and (max-width: 37.5em) {
           header .header__middle--text__para {
             font-size: 1.5rem; } }
@@ -738,6 +747,7 @@ header {
   height: 70rem;
   width: 100%;
   top: 20rem;
+  border-radius: 1rem;
   background-image: linear-gradient(to right, #FF9400, #FFDC30);
   position: relative;
   display: flex;
@@ -1022,9 +1032,13 @@ header {
           font-size: 1.1rem; } }
 
 .footer__container {
-  margin-top: 5rem;
-  height: 15vh;
+  margin-top: 10rem;
+  font-size: 1.5rem;
   width: 100%;
-  background-color: #999; }
+  height: 4rem;
+  background-color: #FF9400; }
+.footer__text {
+  margin: 1rem;
+  align-items: center; }
 
 /*# sourceMappingURL=style.css.map */

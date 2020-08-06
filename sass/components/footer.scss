@@ -1,9 +1,16 @@
 .footer{
     &__container{
-    margin-top: 5rem;
-        height: 15vh;
+    margin-top: 10rem;
+//        height: 15vh;
+        font-size: 1.5rem;        
         width: 100%;
-//        background-color: #242582;
-        background-color: #999;
+        height: 4rem;
+//        background-color: #;
+        background-color:#FF9400;
+//        color: #FF9400;
+    }
+    &__text{
+        margin: 1rem;
+        align-items: center;
     }
 }
